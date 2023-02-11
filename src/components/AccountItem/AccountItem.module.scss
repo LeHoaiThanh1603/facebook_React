@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+    margin-top: 4px;
+    width: 100%;
+
+    &:hover {
+        background-color: var(--hover-bg);
+        cursor: pointer;
+    }
+    &__accountItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        &--avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &--content {
+            margin-left: 12px;
+            margin-bottom: 0;
+            max-width: calc(100% - 100px);
+            overflow: hidden;
+            word-wrap: break-word;
+            white-space: pre-line;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+        }
+
+        &--remove {
+            width: 25px;
+            height: 25px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 35px;
+            &:hover {
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: var(--hover-bg);
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.content {
+    width: 360px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+        margin-left: 12px;
+        background-color: var(--bg-input);
+        border-radius: 50%;
+        padding: 8px;
+        cursor: pointer;
+        font-size: 20px;
+        svg {
+            display: block;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        margin-left: 16px;
+        font-weight: 600;
+    }
+
+    &__more {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+}
+
+.name {
+    margin: 0 0 0 8px;
+}
+
+.item {
+    padding: 12px 0;
+    transition: all linear 0.05s;
+}
+
+.item:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--hover-bg);
+}
+
+.popup {
+    min-width: 360px;
+    right: 0;
+}
+
+.btn-action {
+    background-color: transparent !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin-right: 8px !important;
+    &:hover {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        cursor: pointer;
+    }
+}
+
+.MuiPaper-root {
+    margin-top: 8px !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+.back-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: var(--white);
+}
+.header-title {
+}

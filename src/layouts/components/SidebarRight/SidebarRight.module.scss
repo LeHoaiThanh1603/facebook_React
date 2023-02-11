@@ -1,0 +1,79 @@
+.wrapper {
+    position: fixed;
+    right: 10px;
+    margin-top: 56px;
+    width: 300px;
+    height: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 8px;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+.wrapper:hover::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+.container {
+    margin: 6px 0;
+    border-bottom: 1px solid var(--boder-color);
+}
+
+.container {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__accept {
+        display: flex;
+    }
+
+    &____mutualFriends {
+        display: flex;
+    }
+}
+
+.icon {
+    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/uMVwKT5OPid.png');
+    height: 36px;
+    width: 36px;
+    background-position: 0 0;
+    background-size: 38px 342px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 20px;
+}
+.item {
+    margin-bottom: 24px;
+}
+
+.viewProfile {
+    width: 100%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    &__wrapper {
+        display: flex;
+        padding: 16px 12px;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 12px;
+    }
+}

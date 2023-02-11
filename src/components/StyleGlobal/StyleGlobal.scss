@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+}
+
+// html::-webkit-scrollbar {
+//     display: none;
+// }
+// html:hover::-webkit-scrollbar {
+//     display: block;
+// }
+
+html::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+:root {
+    --nav-primay: #242526;
+    --primary: #18191a;
+    --white: #fff;
+    --hover-bg: #292a2c;
+    --boder-color: #3e4042;
+    --bage-bg: #e41e3f;
+    --bg-input: #3a3b3c;
+    --caret-input: #b0b3b8;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper {
+    background-color: transparent !important;
+}
+
+.MuiTypography-root {
+    padding: 0 !important;
+}
+
+.MuiTooltip-tooltip {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.css-ja5taz-MuiTooltip-tooltip {
+    background: none !important;
+}

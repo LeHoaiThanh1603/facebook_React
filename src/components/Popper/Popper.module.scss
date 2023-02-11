@@ -1,0 +1,26 @@
+.wrapper {
+    width: 100%;
+    max-height: 400px;
+    padding: 12px 8px;
+    background-color: var(--nav-primay);
+    color: var(--white);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+.wrapper:hover::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}

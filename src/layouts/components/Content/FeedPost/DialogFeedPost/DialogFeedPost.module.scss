@@ -1,0 +1,134 @@
+.MuiPaper-root {
+    margin: 0 !important;
+}
+
+.wrapper {
+    width: 500px;
+    max-height: 430px;
+    padding: 20px;
+    background-color: var(--nav-primay);
+    color: var(--white);
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+}
+
+.post-wrap {
+    margin-bottom: 20px;
+}
+
+.user {
+    height: 20%;
+    display: flex;
+
+    &__info {
+        margin-left: 14px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__public {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        color: var(--white);
+        font-size: 14px;
+        padding: 0 10px 0 6px;
+
+        background-color: var(--bg-input);
+    }
+}
+
+.content {
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+    &__input {
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-height: 20%;
+        min-height: 50px;
+        background-color: var(--nav-primay);
+        caret-color: var(--white);
+        color: var(--white);
+        resize: none;
+        padding: 15px;
+        border: none;
+        outline: none;
+        &:focus {
+            border: transparent;
+        }
+    }
+
+    &__emojiIcon {
+        margin: 12px 20px 12px 0;
+        float: right;
+
+        font-size: 26px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    &__emoji {
+        position: absolute;
+        right: -200px;
+    }
+
+    &__upload {
+        position: relative;
+    }
+
+    &__uploadIcon {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+    }
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Chọn ảnh';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px var(--white);
+    font-weight: 700;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.test {
+}
+
+.imagePreview {
+    width: 100%;
+    object-fit: cover;
+}
+.footer {
+    height: 20%;
+}

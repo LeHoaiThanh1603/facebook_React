@@ -1,0 +1,32 @@
+.wrapper {
+    position: fixed;
+    margin-top: 56px;
+    width: 300px;
+    height: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 8px;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+.wrapper:hover::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+.container {
+    margin: 6px 0;
+    border-bottom: 1px solid var(--boder-color);
+}

@@ -1,0 +1,38 @@
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--icon {
+        background-color: var(--bg-input);
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        img {
+            display: block;
+        }
+    }
+
+    &--user {
+        position: relative;
+    }
+
+    &--icon--down {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: var(--white);
+        background-color: var(--bg-input);
+        border-radius: 50%;
+    }
+}
+
+.box {
+    width: 360px;
+}
